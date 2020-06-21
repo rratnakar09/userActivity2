@@ -12,10 +12,9 @@ Instructions:
 * Please include a README file.
 
 Solution Approach:</br>
-Create a new django application</bt>
+Create a new django application</br>
 Create a new app inside this application</br>
-Create two model with name User and Activity. User will store the user data like id(as primary key), first name, last name and time zone</br>
-and Activity will store the user's activity.</br>
+Create two model with name User and Activity. User will store the user data like id(as primary key), first name, last name and time zone. Activity will store the user's activity.</br>
 The User will have a one to many relation with activity. One user can have multiple activities.</bt>
 I have used a class View which has extended generic view. I have defined a get function in this I have reformated the data 
 from User and Activity to make it look like the given format.</br> 
