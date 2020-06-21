@@ -23,10 +23,10 @@ For this I have used dictionary and list data structure. I have used jsonrespons
 I have deployed this on pythonanywhere "http://rratnakar09.pythonanywhere.com/"</br>
 end point: 'api/get/' <br>
 
-import requests
-BASE_URLS = "http://rratnakar09.pythonanywhere.com/"
-ENDPOINT = "api/get"
-resp = requests.get(BASE_URLS + ENDPOINT)
+import requests<br>
+BASE_URLS = "http://rratnakar09.pythonanywhere.com/"<br>
+ENDPOINT = "api/get"<br>
+resp = requests.get(BASE_URLS + ENDPOINT)<br>
 print(resp.json())
 
 
