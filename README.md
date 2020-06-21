@@ -20,6 +20,7 @@ I have used a class View which has extended generic view. I have defined a get f
 from User and Activity to make it look like the given format.</br> 
 For this I have used dictionary and list data structure. I have used jsonresponse to serialize the data and send it to use</br>
 
-I have deployed this on pythonanywhere "http://rratnakar09.pythonanywhere.com/". 
+I have deployed this on pythonanywhere "http://rratnakar09.pythonanywhere.com/"</br>
+end point: 'api/get/'
 
 It was a great learning experience to learn and deploy a web api app on pythonanywhere.
