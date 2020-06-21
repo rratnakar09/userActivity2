@@ -21,6 +21,13 @@ from User and Activity to make it look like the given format.</br>
 For this I have used dictionary and list data structure. I have used jsonresponse to serialize the data and send it to use</br>
 
 I have deployed this on pythonanywhere "http://rratnakar09.pythonanywhere.com/"</br>
-end point: 'api/get/'
+end point: 'api/get/' <br>
+
+import requests
+BASE_URLS = "http://rratnakar09.pythonanywhere.com/"
+ENDPOINT = "api/get"
+resp = requests.get(BASE_URLS + ENDPOINT)
+print(resp.json())
+
 
 It was a great learning experience to learn and deploy a web api app on pythonanywhere.
