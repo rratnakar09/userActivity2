@@ -7,9 +7,9 @@ populate the database with some dummy data, and design an API to serve that data
 this link(https://drive.google.com/open?id=1xZa3UoXZ3uj2j0Q7653iBp1NrT0gKj0Y).
 
 Instructions:
-    • Please complete this assignment using Python & Django. Feel free to use any Python packages as you see fit.
-    • The code and API endpoint should be production ready and hosted somewhere in a publicly accessible location like on AWS, Heroku, PythonAnywhere, etc.
-    • Please include a README file.
+* Please complete this assignment using Python & Django. Feel free to use any Python packages as you see fit.
+* The code and API endpoint should be production ready and hosted somewhere in a publicly accessible location like on AWS, Heroku, PythonAnywhere, etc.
+* Please include a README file.
 
 Solution Approach:</br>
 Create a new django application</bt>
