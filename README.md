@@ -31,3 +31,15 @@ print(resp.json())
 
 
 It was a great learning experience to learn and deploy a web api app on pythonanywhere.
+
+### Future Work:<br>
+Working on to use Django Rest Framework to make an API which will serve <br>
+* get users
+* get user by user_id
+* post by user_id
+* delete by user_id
+* get activities
+* get activity by user_id and activity_id
+* post activity by user_id and activity_id
+* delete activity by user_id and activity_id 
+
