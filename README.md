@@ -21,11 +21,12 @@ from User and Activity to make it look like the given format.</br>
 For this I have used dictionary and list data structure. I have used jsonresponse to serialize the data and send it to use</br>
 
 I have deployed this on pythonanywhere "http://rratnakar09.pythonanywhere.com/"</br>
-end point: 'api/get/' <br>
+end point:  "api/usersactivities" 
 
+Example to retirve all the user activity as given in json format.<br>
 import requests<br>
 BASE_URLS = "http://rratnakar09.pythonanywhere.com/"<br>
-ENDPOINT = "api/get"<br>
+ENDPOINT = "api/usersactivities"<br>
 resp = requests.get(BASE_URLS + ENDPOINT)<br>
 print(resp.json())
 
@@ -34,12 +35,15 @@ It was a great learning experience to learn and deploy a web api app on pythonan
 
 ### Future Work:<br>
 Working on to use Django Rest Framework to make an API which will serve <br>
-* get users
-* get user by user_id
-* post by user_id
+I have used Django Rest Framework to build an api to retrieve, update and delete the below functions:<br>
+* get all users : http://rratnakar09.pythonanywhere.com/api/users
+* get user by user_id: http://rratnakar09.pythonanywhere.com/api/users/W012A3CDE
+* post by user_id 
 * delete by user_id
-* get activities
-* get activity by user_id and activity_id
-* post activity by user_id and activity_id
-* delete activity by user_id and activity_id 
+* get all activities: http://rratnakar09.pythonanywhere.com/api/activities/
+* get activity by user_id and activity_id: http://rratnakar09.pythonanywhere.com/api/activities//W012A3CDE/1
+* post activity by user_id and activity_id 
+* delete activity by user_id and activity_id  
+
+API end points for the above functions are "api/users",  "api/users/<str:pk>", "api/activities", "api/activities/<str:pk>/<int:id>" 
 
