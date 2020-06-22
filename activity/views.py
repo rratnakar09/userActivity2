@@ -33,13 +33,14 @@ class UserActivityView(View):
             user_data["activity_periods"] = []
             # filter all the activities for a given user by user id
             activities = ActivityTrack.objects.filter(user=user.id)
-            user_activities = {}
+            
             # loop over all the activities one by one 
             # this will give all the activity of a user
             for act in activities:
+                user_activities = {}
                 user_activities["start_time"] = act.start_time # activity start time
                 user_activities["end_time"] = act.end_time # activity end time
-            user_data["activity_periods"].append(user_activities)
+                user_data["activity_periods"].append(user_activities)
             data["members"].append(user_data)
 
         return JsonResponse(data)         
