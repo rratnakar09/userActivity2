@@ -18,7 +18,8 @@ Create two model with name User and Activity. User will store the user data like
 The User will have a one to many relation with activity. One user can have multiple activities.</bt>
 I have used a class View which has extended generic view. I have defined a get function in this I have reformated the data 
 from User and Activity to make it look like the given format.</br> 
-For this I have used dictionary and list data structure. I have used jsonresponse to serialize the data and send it to use</br>
+For this I have used dictionary and list data structure. I have used jsonresponse to serialize the data and send it to user</br>
+I have used rest-framework generic mixins to design get, put, post and delete api functions</br> 
 
 I have deployed this on pythonanywhere "http://rratnakar09.pythonanywhere.com/"</br>
 end point:  "api/usersactivities" 
@@ -31,7 +32,7 @@ resp = requests.get(BASE_URLS + ENDPOINT)<br>
 print(resp.json())
 
 
-I have used Django Rest Framework to build an api to retrieve, update and delete users and activities as below functions:<br>
+I have used Django Rest Framework to build an api to retrieve, create, update and delete users and activities as below functions:<br>
 * get all users activities: http://rratnakar09.pythonanywhere.com/api/usersactivities
 * get all users : http://rratnakar09.pythonanywhere.com/api/users
 * get user by user_id: http://rratnakar09.pythonanywhere.com/api/users/W012A3CDE
@@ -44,5 +45,5 @@ I have used Django Rest Framework to build an api to retrieve, update and delete
 
 API end points for the above functions are "api/users",  "api/users/<str:pk>", "api/activities", "api/activities/<str:pk>/<int:id>" 
 
-It was a great learning experience to learn and deploy a web api app on pythonanywhere.
+It was a great learning experience to learn and deploy a django web api app on pythonanywhere.
 
